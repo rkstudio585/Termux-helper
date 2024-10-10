@@ -1,0 +1,25 @@
+Usage: ftp [OPTION...] [HOST [PORT]]
+Remote file transfer.
+
+  -4, --ipv4                 contact IPv4 hosts
+  -6, --ipv6                 contact IPv6 hosts
+  -A, --active               enable active mode transfer
+  -d, --debug                enable debugging output
+  -e, --no-edit              disable command line editing
+  -g, --no-glob              turn off file name globbing
+  -i, --no-prompt            do not prompt during multiple file transfers
+  -n, --no-login             do not automatically login to the remote system
+  -N, --netrc=NETRC          select a specific initialization file
+      --prompt[=PROMPT]      print a command line PROMPT (optionally), even if
+                             not on a tty
+  -p, --passive              enable passive mode transfer, default for `pftp'
+  -t, --trace                enable packet tracing
+  -v, --verbose              verbose output
+  -?, --help                 give this help list
+      --usage                give a short usage message
+  -V, --version              print program version
+
+Mandatory or optional arguments to long options are also mandatory or optional
+for any corresponding short options.
+
+Report bugs to <bug-inetutils@gnu.org>.

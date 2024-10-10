@@ -1,0 +1,70 @@
+
+alias - create a function
+
+aalliiaass
+aalliiaass [----ssaavvee] _N_A_M_E _D_E_F_I_N_I_T_I_O_N
+aalliiaass [----ssaavvee] _N_A_M_E==_D_E_F_I_N_I_T_I_O_N
+
+DDEESSCCRRIIPPTTIIOONN
+aalliiaass is a simple wrapper for the ffuunnccttiioonn
+builtin, which creates a function wrapping a
+command. It has similar syntax to POSIX shell
+aalliiaass. For other uses, it is recommended to
+define a _f_u_n_c_t_i_o_n.
+
+If you want to ease your interactive use, to
+save typing, consider using an _a_b_b_r_e_v_i_a_t_i_o_n
+instead.
+
+ffiisshh marks functions that have been created by
+aalliiaass by including the command used to create
+them in the function description. You can list
+aalliiaass-created functions by running aalliiaass without
+arguments. They must be erased using ffuunnccttiioonnss
+--ee.
+
++o NNAAMMEE is the name of the alias
+
++o DDEEFFIINNIITTIIOONN is the actual command to execute.
+  aalliiaass automatically appends $$aarrggvv, so that all
+  parameters used with the alias are passed to
+  the actual command.
+
+You cannot create an alias to a function with
+the same name. Note that spaces need to be
+escaped in the call to aalliiaass just like at the
+command line, _e_v_e_n _i_n_s_i_d_e _q_u_o_t_e_d _p_a_r_t_s.
+
+The following options are available:
+
+--hh or ----hheellpp
+       Displays help about using this command.
+
+--ss or ----ssaavvee
+       Saves the function created by the alias
+       into your fish configuration directory
+       using _f_u_n_c_s_a_v_e.
+
+EEXXAAMMPPLLEE
+The following code will create rrmmii, which runs
+rrmm with additional arguments on every
+invocation.
+
+   alias rmi="rm -i"
+
+   # This is equivalent to entering the following function:
+   function rmi --wraps rm --description 'alias rmi=rm -i'
+       rm -i $argv
+   end
+
+   # This needs to have the spaces escaped or "Chrome.app..."
+   # will be seen as an argument to "/Applications/Google":
+   alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome banana'
+
+SSEEEE MMOORREE
+
+1. The _f_u_n_c_t_i_o_n command this builds on.
+
+2. _F_u_n_c_t_i_o_n_s.
+
+3. _D_e_f_i_n_i_n_g _a_l_i_a_s_e_s.

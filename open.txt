@@ -1,0 +1,20 @@
+
+open - open file in its default application
+
+ooppeenn _F_I_L_E_S ...
+
+DDEESSCCRRIIPPTTIIOONN
+ooppeenn opens a file in its default application,
+using the appropriate tool for the operating
+system. On GNU/Linux, this requires the common
+but optional xxddgg--ooppeenn utility, from the
+xxddgg--uuttiillss package.
+
+Note that this function will not be used if a
+command by this name exists (which is the case
+on macOS or Haiku).
+
+EEXXAAMMPPLLEE
+ooppeenn **..ttxxtt opens all the text files in the
+current directory using your system's default
+text editor.

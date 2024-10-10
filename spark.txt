@@ -1,0 +1,5 @@
+usage: spark [--min=<n> --max=<n>] <numbers...>  Draw sparklines
+examples:
+       spark 1 2 3 4
+       seq 100 | sort -R | spark
+       awk \$0=length spark.fish | spark

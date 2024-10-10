@@ -1,0 +1,22 @@
+Toybox 0.8.9-android multicall binary (see toybox --help)
+
+usage: top [-Hhbq] [-k FIELD,] [-o FIELD,] [-s SORT] [-n NUMBER] [-m LINES] [-d SECONDS] [-p PID,] [-u USER,]
+
+Show process activity in real time.
+
+-H	Show threads
+-h	Usage graphs instead of text
+-k	Fallback sort FIELDS (default -S,-%CPU,-ETIME,-PID)
+-o	Show FIELDS (def PID,USER,PR,NI,VIRT,RES,SHR,S,%CPU,%MEM,TIME+,CMDLINE)
+-O	Add FIELDS (replacing PR,NI,VIRT,RES,SHR,S from default)
+-s	Sort by field number (1-X, default 9)
+-b	Batch mode (no tty)
+-d	Delay SECONDS between each cycle (default 3)
+-m	Maximum number of tasks to show
+-n	Exit after NUMBER iterations
+-p	Show these PIDs
+-u	Show these USERs
+-q	Quiet (no header lines)
+
+Cursor UP/DOWN or LEFT/RIGHT to move list, SHIFT LEFT/RIGHT to change sort,
+space to force update, R to reverse sort, Q to exit.
